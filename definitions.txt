@@ -1,0 +1,73 @@
+Définitions
+===========
+Base de données - SGBDR
+------------------------
+Une base de données (en anglais database), permet de stocker et de retrouver l'intégralité de données brutes ou d'informations en rapport avec un thème ou une activité ; celles-ci peuvent être de natures différentes et plus ou moins reliées entre elles1,2. Dans la très grande majorité des cas, ces informations sont très structurées, et la base est localisée dans un même lieu et sur un même support. Ce dernier est généralement informatisé.
+
+La base de données est au centre des dispositifs informatiques de collecte, mise en forme, stockage et utilisation d'informations. Le dispositif comporte un système de gestion de base de données (abréviation : SGBD) : un logiciel moteur qui manipule la base de données et dirige l'accès à son contenu. De tels dispositifs comportent également des logiciels applicatifs, et un ensemble de règles relatives à l'accès et l'utilisation des informations.
+
+Table - Une colonne - Une ligne
+-------------------------------
+Dans les bases de données relationnelles, une table est un ensemble de données organisées sous forme d'un tableau où les colonnes correspondent à des catégories d'information (une colonne peut stocker des numéros de téléphone, une autre des noms...) et les lignes à des enregistrements, également appelés entrées
+
+Une clé primaire - Une clé étrangère
+------------------------------------
+Dans les modèles de données relationnels, la clé primaire est un attribut dont le contenu est différent pour chaque enregistrement de la table, ce qui permet de retrouver un et un seul enregistrement.
+
+Dans les modèles de données relationnels, une clé étrangère est un attribut qui contient une référence à une donnée connexe - dans les faits la valeur de la clé primaire de la donnée connexe.
+
+Contraintes
+-----------
+Les contraintes permettent de limiter le type de données à insérer dans une table. Ces contraintes peuvent être spécifiées lors de la création de la table par l’intermédiaire de l’instruction CREATE TABLE, ou après la création de la table au moyen de l’instruction ALTER TABLE.
+
+Les contraintes les plus communes sont :
+
+    NOT NULL
+    UNIQUE
+    CHECK
+    Clé primaire
+    Clé étrangère
+
+Index
+-----
+L’index est utile pour accélérer l’exécution d’une requête SQL qui lit des données et ainsi améliorer les performances d’une application utilisant une base de données.
+
+CRUD
+----
+L'acronyme informatique anglais CRUD (pour create, read, update, delete) (parfois appelé SCRUD avec un "S" pour search) désigne les quatre opérations de base pour la persistance des données, en particulier le stockage d'informations en base de données.
+Soit :
+
+    Create : créer
+    Read : lire
+    Update : mettre à jour
+    Delete : supprimer
+
+Jointure SQL
+------------
+Les jointures en SQL permettent d’associer plusieurs tables dans une même requête. Cela permet d’exploiter la puissance des bases de données relationnelles pour obtenir des résultats qui combinent les données de plusieurs tables de manière efficace.
+
+**********************************************************************************************************
+**********************************************************************************************************
+
+
+Travail de recherche
+====================
+
+Qu’est ce qu’une transaction, un commit et un rollback ?
+--------------------------------------------------------
+
+Citez un exemple concret issu de votre projet chef d’oeuvre dans lequel une transaction pourrait
+s’appliquer ?
+------------------------------------------------------------------------------------------------
+
+Qu’est-ce qu’une sous-requête? Proposez une requête contenant une sous-requête ?
+--------------------------------------------------------------------------------
+
+Qu’est-ce qu’une vue ?
+----------------------
+
+Que sont MyISAM et innoDB ?
+---------------------------
+InnoDB is a general-purpose storage engine that balances high reliability and high performance. Starting from MySQL 5.5.5 (https://dev.mysql.com/doc/refman/5.5/en/innodb-introduction.html)
+
+Before MySQL 5.5.5, MyISAM is the default storage engine. (The default was changed to InnoDB in MySQL 5.5.5.) MyISAM is based on the older (and no longer available) ISAM storage engine but has many useful extensions. (https://dev.mysql.com/doc/refman/5.5/en/myisam-storage-engine.html)
